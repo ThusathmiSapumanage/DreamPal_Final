@@ -3,7 +3,7 @@ package com.example.DreamPal_Goals.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collation = "Goals")
+@Document(collection = "Goals")
 public class Goal {
     @Id
     private String id;

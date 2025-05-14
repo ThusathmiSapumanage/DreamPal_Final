@@ -19,7 +19,7 @@ public class GoalsController {
         return goalsService.createGoal(goal);
     }
 
-    @GetMapping("/{userId}")
+    @GetMapping("users/{userId}")
     public List<Goal> get(@PathVariable String userId) {
         return goalsService.getGoalsById(userId);
     }
