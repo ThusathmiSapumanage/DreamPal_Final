@@ -14,13 +14,13 @@ public class Resume {
     private String userId;
     private String fullName;
     private String summary;
-    private String phoneNumber;
+    private String phone;
     private String email;
-    private String linkedinLink;
+    private String linkedin;
 
     private List<String> education;
     private List<String> experience;
-    private List<Date> experienceDate;
+    private List<String> experienceDate;
     private List<String> company;
     private List<String> skills;
     private List<String> experienceSummary;
@@ -84,11 +84,11 @@ public class Resume {
         this.experienceSummary = experienceSummary;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPhone() {
+        return phone;
     }
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getEmail() {
@@ -97,11 +97,11 @@ public class Resume {
     public void setEmail(String email) {
         this.email = email;
     }
-    public String getLinkedinLink() {
-        return linkedinLink;
+    public String getLinkedin() {
+        return linkedin;
     }
-    public void setLinkedinLink(String linkedinLink) {
-        this.linkedinLink = linkedinLink;
+    public void setLinkedin(String linkedin) {
+        this.linkedin = linkedin;
     }
 
     public List<String> getProjects() {
@@ -125,10 +125,10 @@ public class Resume {
         this.projectSummery = projectSummery;
     }
 
-    public List<Date> getExperienceDate() {
+    public List<String> getExperienceDate() {
         return experienceDate;
     }
-    public void setExperienceDate(List<Date> experienceDate) {
+    public void setExperienceDate(List<String> experienceDate) {
         this.experienceDate = experienceDate;
     }
 
@@ -139,7 +139,7 @@ public class Resume {
         this.company = company;
     }
 
-    public Resume(String id, String userId, String fullName, String summary, List<String> education, List<String> experience, List<String> skills, List<String> experienceSummary, String phoneNumber, String email, String linkedinLink, List<String> projects, List<String> certifications, List<String> projectSummery, List<Date> experienceDate, List<String> company) {
+    public Resume(String id, String userId, String fullName, String summary, List<String> education, List<String> experience, List<String> skills, List<String> experienceSummary, String phone, String email, String linkedin, List<String> projects, List<String> certifications, List<String> projectSummery, List<String> experienceDate, List<String> company) {
         this.id = id;
         this.userId = userId;
         this.fullName = fullName;
@@ -148,9 +148,9 @@ public class Resume {
         this.experience = experience;
         this.skills = skills;
         this.experienceSummary = experienceSummary;
-        this.phoneNumber = phoneNumber;
+        this.phone = phone;
         this.email = email;
-        this.linkedinLink = linkedinLink;
+        this.linkedin = linkedin;
         this.projects = projects;
         this.certifications = certifications;
         this.projectSummery = projectSummery;
