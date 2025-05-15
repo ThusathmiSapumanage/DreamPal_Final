@@ -1,0 +1,13 @@
+package com.example.DreamPal_Goals;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DreamPalGoalsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DreamPalGoalsApplication.class, args);
+	}
+
+}
